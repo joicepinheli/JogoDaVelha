@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título do Jogo na Barra de Título -->
+    <title>Jogo do Fillipe GAMER </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Título do Jogo na Página -->
+    <h1>JOGO DO FILLIPE GAMER!!!</h1>
+    <img class="back" src="roblox.jpg"> 
+    
+   <!-- Definição da Estrutura do Jogo da Velha --> 
+    <div>
+        <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+
+    <div>
+        <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+
+    <div>
+        <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+
+   <!-- Definição do Jogador Atual -->
+    <div class="jogador">
+        <label>Jogador: </label>
+        <label id="jogador-selecionado"></label>
+    </div>
+
+  <!-- Definição do Vencedor -->
+    <div class="vencedor">
+        <label>Vencedor: </label>
+        <label id="vencedor-selecionado"></label>
+    </div>
+    
+   <!-- Botão Reiniciar -->
+    <div>
+        <button onclick="reiniciar()">Reiniciar</button>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <p>&copy;<strong>Joice Pinheli 2022</strong><br>
+        <a href="https://www.linkedin.com/in/joicepinheli/" target="_blank">LinkedIn</a> | <a href="https://github.com/joicepinheli" target="_blank">GitHub</a></p>
+    </footer>
+ 
+    <script src="script.js"></script>    
+    
+</body>
+</html>
